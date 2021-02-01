@@ -33,7 +33,7 @@
     "postbuild": "npm run copy-fonts",
     "prebuild": "npm run clean && npm run compile-icons",
     "prepublish": "npm run build",
-    "start:storybook": "start-storybook -p 6006 -s public",
+    "storybook": "start-storybook -p 6006 -s public",
     "test": "react-scripts test"
   },
   "eslintConfig": {

@@ -1,19 +1,19 @@
 import styled from "styled-components";
-import { ComponentSize, heights, sidePaddings } from "../../config/sizes";
+import { ComponentSize, heights, sidePaddings } from "../../assets/sizes";
 import { ButtonType } from "./button";
 
 type StateColors = {
     regular: string;
     hover: string;
 }
-
+// ['#ffc973', '#ff9b71', '#b692fe', '#01d4ff', '#e4ee90']
 const typeColors: {[key in ButtonType]: StateColors} = {
     default: {
-        regular: '#0018cf',
+        regular: '#01d4ff',
         hover: '#2e27cc',
     },
     danger: {
-        regular: '#d93848',
+        regular: '#ff9b71',
         hover: '#eb4d5d',
     },
     ghost: {
@@ -21,7 +21,7 @@ const typeColors: {[key in ButtonType]: StateColors} = {
         hover: '#dbdbdb',
     },
     secondary: {
-        regular: '#000',
+        regular: '#e4ee90',
         hover: '#3d3d3d',
     }
 };
@@ -32,7 +32,6 @@ interface StyledButtonProps {
     withText: boolean;
 }
 
-/* Real tag is assigned dynamically */
 export const StyledButton = styled.button<StyledButtonProps>`
     display: flex;
     align-items: center;
@@ -63,11 +62,11 @@ export const StyledButton = styled.button<StyledButtonProps>`
             color: #5e5e5e !important;
         }
     ` : ''}
-    border-radius: 0;
+    border-radius: 20px;
     outline: none;
 
     &:focus {
-        box-shadow: 0 0 0 1px #fff, 0 0 0 2px ${ (pr) => typeColors[pr.innerType].regular };
+        box-shadow: 0 0 0 1px #fff, 0 0 0 2px ${(pr) => typeColors[pr.innerType].regular};
     }
     &:hover {
         background-color: ${ (pr) => typeColors[pr.innerType].hover };

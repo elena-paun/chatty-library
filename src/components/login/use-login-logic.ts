@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { LoginModel, SubmitHandler } from "./login";
 import { validate as validateEmail } from 'email-validator';
 
@@ -41,7 +41,7 @@ const useLoginLogic = (
         onSubmit(values);
       }
       setIsSubmitting(false);
-    }, [errors]);
+    }, [errors, isSubmitting, onSubmit, values]);
   
     const handleSubmit = (
       event: any,

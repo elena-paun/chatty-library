@@ -1,3 +1,4 @@
+import { colors } from './index';
 import { createGlobalStyle } from 'styled-components';
 import './fonts/styles.css';
 
@@ -9,3 +10,6 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 `;
+export const theme = {
+    colors
+}
