@@ -1,6 +1,6 @@
 import React, { HTMLAttributes, useRef } from 'react';
 import TextInput from '../text-input';
-import { ComponentSize } from '../../config/sizes';
+import { ComponentSize } from '../../assets/sizes';
 import { 
     StyledWrapper,
     StyledHeader, 

@@ -1,7 +1,7 @@
 import React, { ChangeEventHandler } from 'react';
 import Button from '../button';
 import TextInput from '../text-input';
-import { ComponentSize } from '../../config/sizes';
+import { ComponentSize } from '../../assets/sizes';
 import { SearchWrapper } from './styled';
 import SearchIcon from '../../icons/Search';
 

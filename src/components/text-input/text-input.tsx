@@ -1,5 +1,5 @@
 import React, { ChangeEventHandler, HTMLAttributes } from 'react';
-import { ComponentSize } from '../../config/sizes';
+import { ComponentSize } from '../../assets/sizes';
 import { StyledTextInput, StyledWrapper, StyledIcon, StyledCross } from './styled';
 
 export interface TextInputProps extends Omit<HTMLAttributes<HTMLInputElement>, 'size' | 'disabled' | 'onChange'> {

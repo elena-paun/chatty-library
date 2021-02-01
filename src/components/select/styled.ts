@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ComponentSize, heights, sidePaddings } from "../../config/sizes";
+import { ComponentSize, heights, sidePaddings } from "../../assets/sizes";
 import ArrowDown from '../../icons/ArrowDown';
 
 interface StyledWrapperProps {
