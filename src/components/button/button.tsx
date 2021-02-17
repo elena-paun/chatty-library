@@ -3,7 +3,7 @@ import { StyledButton, StyledIcon } from './styled';
 import Spinner from '../spinner';
 import { ComponentSize } from '../../assets/sizes';
 
-export type ButtonType = 'default' | 'danger' | 'ghost' | 'secondary';
+export type ButtonType = 'primary' | 'accent' | 'alert' | 'error' | 'decorative' | 'success' | 'danger' | 'ghost' | 'secondary' | 'active' | 'progress';
 
 interface BaseButtonProps {
     type?: ButtonType;
@@ -38,7 +38,7 @@ export type ButtonProps = HTMLButtonProps & HTMLAnchorProps & CustomNodeProps;
 
 const Button: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref) => {
     const { 
-        type = 'default',
+        type = 'primary',
         icon,
         size = 'default',
         className,

@@ -8,7 +8,39 @@ type StateColors = {
 }
 // ['#ffc973', '#ff9b71', '#b692fe', '#01d4ff', '#e4ee90']
 const typeColors: {[key in ButtonType]: StateColors} = {
-    default: {
+    primary: {
+        regular: 'rgb(68, 121, 252)',
+        hover: 'rgb(38, 99, 249)',
+    },
+    secondary: {
+        regular: 'rgb(24, 48, 79)',
+        hover: '#3d3d3d',
+    },
+    accent: {
+        regular: 'rgb(40, 229, 252)',
+        hover: 'rgb(40, 229, 260)',
+    },
+    decorative: {
+        regular: 'rgb(243, 65, 169)',
+        hover: '#3d3d3d',
+    },
+    success: {
+        regular: 'rgb(18, 206, 157)',
+        hover: '#3d3d3d',
+    },
+    alert: {
+        regular: 'rgb(255, 193, 18)',
+        hover: '#3d3d3d',
+    },
+    error: {
+        regular: 'rgb(210, 18, 18)',
+        hover: '#3d3d3d',
+    },
+    active: {
+        regular: '#01d4ff',
+        hover: '#2e27cc',
+    },
+    progress: {
         regular: '#01d4ff',
         hover: '#2e27cc',
     },
@@ -19,10 +51,6 @@ const typeColors: {[key in ButtonType]: StateColors} = {
     ghost: {
         regular: 'transparent',
         hover: '#dbdbdb',
-    },
-    secondary: {
-        regular: '#e4ee90',
-        hover: '#3d3d3d',
     }
 };
 
@@ -49,7 +77,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
     padding: 0 ${ pr => sidePaddings[pr.size]}px;
     height: ${ pr => heights[pr.size]}px;
     color: ${ pr => pr.innerType === 'ghost' 
-        ? typeColors['default'].regular
+        ? typeColors['primary'].regular
         : '#fff'
     };
     ${ pr => pr.disabled ? `
