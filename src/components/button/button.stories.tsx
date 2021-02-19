@@ -13,39 +13,66 @@ export default {
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
-    children: 'Default Button'
-}
-
-export const DangerButton = Template.bind({});
-DangerButton.args = {
-  children: 'Danger Button',
-  type: 'danger',
-};
-
-export const Ghost = Template.bind({});
-Ghost.args = {
-  children: 'Ghost Button',
-  type: 'ghost',
+export const Primary = Template.bind({});
+Primary.args = {
+    children: 'Primary'
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  children: 'Secondary Button',
+  children: 'Secondary',
   type: 'secondary',
 };
 
+export const Accent = Template.bind({});
+Accent.args = {
+  children: 'Accent',
+  type: 'accent',
+};
+
+export const Decorative = Template.bind({});
+Decorative.args = {
+  children: 'Decorative',
+  type: 'decorative',
+};
+
+export const Success = Template.bind({});
+Success.args = {
+  children: 'Success',
+  type: 'success',
+};
+
+export const Alert = Template.bind({});
+Alert.args = {
+  children: 'Alert',
+  type: 'alert',
+};
+
+export const Error = Template.bind({});
+Error.args = {
+  children: 'Error',
+  type: 'error',
+};
+
+export const Ghost = Template.bind({});
+Ghost.args = {
+  children: 'Ghost',
+  type: 'ghost',
+};
+
+
+
 export const Disabled = Template.bind({});
 Disabled.args = {
-  children: 'Disabled Button',
+  children: 'Disabled',
   disabled: true
 };
 
-export const Loading = Template.bind({});
-Loading.args = {
-  children: 'Button',
+export const Progress = Template.bind({});
+Progress.args = {
+  children: 'Progress',
   loading: true,
+  type: 'progress'
 };
 
 export const WithIcon = Template.bind({});
